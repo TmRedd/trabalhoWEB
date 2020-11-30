@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="./css/BackOffice.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>MovieHub BackOffice</title>
+    
+  </head>
+<body>
+    <div id="modal">
+    <div class="sidenav" >
+        <div class="login-main-text">
+            <p><br></p>
+            <p><br></p>
+            <p><br></p>
+           
+           <h2>Back Office <br>Página de login</h2>
+           <p>Aqui podes fazer o login para aceder ao backoffice</p>
+        </div>
+        </div>
+        <div class="main">
+            <div class="col-md-6 col-sm-12">
+             <div class="login-form">
+                <form id=loginForm>
+                    <div class="form-group">
+                        <label>Utilizador</label>
+                        <input type="text" class="form-control" name="nome" id="nome"  placeholder="UserName"  required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Palavra-passe</label>
+                        <input type="password" class="form-control" name="pass" id="pass"placeholder="Password"  required="required">
+                    </div>
+                    <button id="login_btn" type="submit" class="btn btn-black login-btn">Login</button>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--aqui--> 
+    <div class="container" id="navbar">
+
+        <div class="topnav" id=muda>
+
+            <!-- link da nav bar -->
+            <div class="topnav" id="barra">
+              <div> 
+                <a  id="home_btn" class="topnav a active">Home</a>
+                <a  id="atores_btn" class="topnav a">Atores</a>
+                <a  id="realizadores_btn" class="topnav a">Realizadores</a>
+                <a  id=estudios_btn class="topnav a">Estudios</a>
+                <a  id=filmes_btn class="topnav a">Filmes</a>
+                </div>
+                <!-- logout voltar  -->
+                <div class="topnav-right">            
+                <a href="BackOffice.html">Logout</a>
+                </div>
+           </div>
+        </div>
+
+
+       
+        <p><br></p>           
+         <p><br></p>
+        <h1>Configurações de Administrador</h1>
+        <p><br></p>
+        <p><br></p>
+
+        <div class="card" id="tab_home">
+            
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4 " >Configurar Destaque Filme</h3>
+        
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Nome</th>
+                    
+                    <th class="text-center">Foto</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Da 5 Bloods</td>
+                    
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                
+                </tbody>
+            </table>
+            <p><br></p>
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4 " >Configurar Destaque Ator</h3>
+        
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Nome</th>
+                    
+                    <th class="text-center">Foto</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Chris Hermsworth</td>
+                    
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                
+                </tbody>
+            </table>
+            <p><br></p>
+
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4 " >Configurar Destaque Realizador</h3>
+        
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Nome</th>
+                    
+                    <th class="text-center">Foto</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Christopher Nolan</td>
+                    
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                
+                </tbody>
+            </table>
+
+        </div>
+        <div class="card" id="tab_atores">
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4 " >Configurar Atores</h3>
+        
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Nome</th>
+                    <th class="text-center">Bibliografia</th>
+                    <th class="text-center">Foto</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Dwayne Johnson</td>
+                    <td class="pt-3-half" contenteditable="true">Dwayne Douglas Johnson...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Chris Hemsworth</td>
+                    <td class="pt-3-half" contenteditable="true">Chris Hemsworth nascido em...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Robert Downey Jr.</td>
+                    <td class="pt-3-half" contenteditable="true">Robert Downey Jr. é um actor...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Akshay Kumar</td>
+                    <td class="pt-3-half" contenteditable="true">Akshay Kumar é um actor...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Bradley Cooper</td>
+                    <td class="pt-3-half" contenteditable="true">Bradley Cooper é um actor...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Will Smith</td>
+                    <td class="pt-3-half" contenteditable="true">Will Smith é um actor...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card" id="tab_realizadores">
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4 " >Configurar Realizadores</h3>
+        
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Nome</th>
+                    <th class="text-center">Bibliografia</th>
+                    <th class="text-center">Foto</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Quentin Tarantino</td>
+                    <td class="pt-3-half" contenteditable="true">Tarantino já tem dois Óscares...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Edward Zwick</td>
+                    <td class="pt-3-half" contenteditable="true">O cinema "épico" de hoje basi...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Christopher Nolan</td>
+                    <td class="pt-3-half" contenteditable="true">Nolan surgiu quase de repente.‘Following’...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Steven Spielberg</td>
+                    <td class="pt-3-half" contenteditable="true">Steven Allan Spielberg KBE OMRI...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Martin Scorsese</td>
+                    <td class="pt-3-half" contenteditable="true">Martin Scorsese (Queens, Nova Iorque, 17 de novembro de 1942) é um cineasta...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Kirk Douglas</td>
+                    <td class="pt-3-half" contenteditable="true">Kirk Douglas (nascido Issur Danielovitch...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card" id="tab_estudios">
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4 " >Configurar Estudios</h3>
+        
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Nome</th>
+                    <th class="text-center">Bibliografia</th>
+                    <th class="text-center">Foto</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Sony Pictures</td>
+                    <td class="pt-3-half" contenteditable="true">Sony Pictures Entertainment In...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Universal Studios</td>
+                    <td class="pt-3-half" contenteditable="true">A Universal Studios (também conheci...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Walt Disney</td>
+                    <td class="pt-3-half" contenteditable="true">The Walt Disney Company, conhecida simplesm...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Warner Bros</td>
+                    <td class="pt-3-half" contenteditable="true">A Warner Bros. Entertainment, é uma produtora...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Paramount Studios</td>
+                    <td class="pt-3-half" contenteditable="true">A Paramount Pictures Corporation é um dos principais...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">NBC Sudios</td>
+                    <td class="pt-3-half" contenteditable="true">Os estúdios da NBC em Nova Iorque, Nova Iorque...</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card" id="tab_filmes">
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4 " >Configurar Filmes</h3>
+        
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Nome</th>
+                    <th class="text-center">Categoria</th>
+                    <th class="text-center">Data lançamento</th>
+                    <th class="text-center">Foto</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Da 5 Bloods</td>
+                    <td class="pt-3-half" contenteditable="true">Filme de guerra, Ação</td>
+                    <td class="pt-3-half" contenteditable="true">20/11/2019</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">TigerTail</td>
+                    <td class="pt-3-half" contenteditable="true">Drama</td>
+                    <td class="pt-3-half" contenteditable="true">06/11/2020</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Relic</td>
+                    <td class="pt-3-half" contenteditable="true">Terror, Drama</td>
+                    <td class="pt-3-half" contenteditable="true">22/04/2020</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Clouds</td>
+                    <td class="pt-3-half" contenteditable="true">Musical</td>
+                    <td class="pt-3-half" contenteditable="true">16/10/2020</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Era Uma Vez Um Sonho</td>
+                    <td class="pt-3-half" contenteditable="true">Drama</td>
+                    <td class="pt-3-half" contenteditable="true">11/11/2020</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pt-3-half" contenteditable="true">Rebecca</td>
+                    <td class="pt-3-half" contenteditable="true">Romance, Suspense</td>
+                    <td class="pt-3-half" contenteditable="true">21/10/2020</td>
+                    
+                    <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Escolher ficheiro</button></span>
+                    </td>
+                    <td>
+                        <span class="table-remove"><button type="button"
+                        class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                    </td>
+                </tr>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        
+          
+    </div>                
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script src="BackOfficeScript.js"></script>
+</body>
+</html>
+      
